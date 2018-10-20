@@ -1,6 +1,7 @@
 from bottle import route, run, template, request, static_file
 from bottle import get, post, put, delete
 import os
+import datetime
 import time
 import json
 import bottle
@@ -21,7 +22,11 @@ def serve_assets(filename):
 def launch_handler():
   l = Launch()
   launches = l.next_launches(5)
-  return template('./layouts/launch', title="All launches", thelaunches=launches)
+  context = dict()
+  context["title"] = "All launches"
+  context["launches"] = launches
+  context["current_date"] = datetime.datetime.now().strftime("%Y-%m-%d")
+  return template('./layouts/launch', context=context)
 
 def main():
   if os.environ.get('APP_LOCATION') == 'heroku':

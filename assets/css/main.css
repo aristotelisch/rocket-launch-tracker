@@ -1,3 +1,20 @@
+/* Calendar events */
+.event {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 150px;
+  bottom: 3px;
+  left: calc(50% - 1.5px);
+  content: " ";
+  display: block;
+  background: #3d8eb9;
+}
+
+.event.busy {
+  background: #f64747;
+}
+
 .controls {
     width: 150px;
     font-size: 32pt;
@@ -7,199 +24,15 @@
     color: white;
 }
 
-#zone_joystick {
-    position: relative;
-}
-
-iframe {
-  border-style:none;
-  min-height:400px;
-  width:650px;
-}
 
 .header {
   margin-bottom: 2em;
-}
-
-.live-stream {
-  margin: 3em;
-  text-align: center;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 1em;
 }
-
-.card h4 {
-  margin-bottom: 2em;
-}
-
-.card-body {
-  text-align: center;
-}
-.card-text {
-  margin: 1em;
-}
-
-/* About Page */
-.about {
-  color:#313437;
-  background-color:#fff;
-}
-
-.about p {
-  color:#7d8285;
-}
-
-.about h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .about h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
-.about .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
-}
-
-.about .intro p {
-  margin-bottom:0;
-}
-
-.about .people {
-  padding-bottom:40px;
-}
-
-.about .item {
-  text-align:center;
-  padding-top:50px;
-}
-
-.about .item .name {
-  font-weight:bold;
-  margin-top:28px;
-  margin-bottom:8px;
-  color:inherit;
-}
-
-.about .item .title {
-  text-transform:uppercase;
-  font-weight:bold;
-  color:#d0d0d0;
-  letter-spacing:2px;
-  font-size:13px;
-}
-
-.about .item .description {
-  font-size:15px;
-  margin-top:15px;
-  margin-bottom:20px;
-}
-
-.about .item img {
-  max-width:160px;
-}
-
-.about .social {
-  font-size:18px;
-  color:#a2a8ae;
-}
-
-.about .social a {
-  color:inherit;
-  margin:0 10px;
-  display:inline-block;
-  opacity:0.7;
-}
-
-.about .social a:hover {
-  opacity:1;
-}
-
-/* Dashboard Actions */
-.actions {
-  color:#313437;
-  background-color:#eef4f7;
-  margin-top: 2em;
-}
-
-.actions p {
-  color:#7d8285;
-}
-
-.actions h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .actions h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
-.actions .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
-}
-
-.actions .intro p {
-  margin-bottom:0;
-}
-
-.actions .features {
-  padding:50px 0;
-}
-
-.actions .item {
-  text-align:center;
-}
-
-.actions .item .box {
-  text-align:center;
-  padding:30px;
-  background-color:#fff;
-  margin-bottom:30px;
-}
-
-.actions .item .icon {
-  font-size:60px;
-  color:#1485ee;
-  margin-top:20px;
-  margin-bottom:35px;
-}
-
-.actions .item .name {
-  font-weight:bold;
-  font-size:18px;
-  margin-bottom:8px;
-  margin-top:0;
-  color:inherit;
-}
-
-.actions .item .description {
-  font-size:15px;
-  margin-top:15px;
-  margin-bottom:20px;
-}
-
-
 
 /* Navigation */
 .navigation {

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome-animation.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -45,6 +47,7 @@
 
     <script src="assets/vendor/js/jquery.min.js"></script>
     <script src="assets/vendor/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   	<script src="assets/js/main.js"></script>
 </body>
 
