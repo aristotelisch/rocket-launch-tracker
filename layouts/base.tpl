@@ -40,7 +40,7 @@
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="/">Home</a></li>
             </ul>
-            <p class="copyright">Αριστοτέλης Χρήστου, Αντώνης Σπανός © 2018</p>
+            <p class="copyright">Αριστοτέλης Χρήστου, Αντώνης Σπανός, Δημήτρης Δεδούσης © 2018</p>
         </footer>
     </div>
     <!-- End footer -->
