@@ -21,7 +21,7 @@ def serve_assets(filename):
 @get('/launch')
 def launch_handler():
   l = Launch()
-  launches = l.next_launches(5)
+  launches = l.next_launches(4)
   context = dict()
   context["title"] = "All launches"
   context["launches"] = launches

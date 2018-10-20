@@ -31,9 +31,10 @@
     </div>
     <!-- End of header -->
 
-    {{!base}}
+    <div class="container">
+        {{!base}}
+    </div>
 
-    <div class="clearfix"></div>
     <!-- Start footer -->
     <div class="footer">
         <footer>

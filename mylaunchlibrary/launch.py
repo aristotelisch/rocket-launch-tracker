@@ -11,7 +11,10 @@ class Launch():
         self.api = ll.Api(retries=10)  # Although `retries` is optional, I included it for the sake of the example.
 
     def next_launches(self, count):
-        return ll.Launch.next(self.api, count)
+        # print("Printing launch counts" + count)
+        # return ll.Launch.next(self.api, count)
+        return ll.Launch.fetch(self.api, next=count, status=1)
+
 
     def past_launches(self):
         # location_id
@@ -25,5 +28,7 @@ class Launch():
 
         result = self.api.send_message(endpoint, data)
         # IPython.embed()
+
         return result["launches"]
+
 
