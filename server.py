@@ -1,13 +1,20 @@
+from bottle import route, run, template, request, static_file
+from bottle import get, post, put, delete
+import os
 import bottle
 import random
 
-@APP.get('/')
+app = bottle.default_app()
+
+@app.get('/')
 def index():
   return '<p>Hello</p>'
-  
-@APP.get('/random')
+
+@app.get('/random')
 def random_integer():
   return str(random.randint(0, 100))
-  
-if __name__ == '__main__':
-  bottle.run(application=APP)
+
+if os.environ.get('APP_LOCATION') == 'heroku':
+    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+else:
+    run(host='localhost', port=8080, debug=True)
