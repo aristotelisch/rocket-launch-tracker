@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{the_title or "No title"}}</title>
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -12,11 +17,11 @@
     <!-- Header with navigation -->
     <div class="header">
         <nav class="navbar navbar-light navbar-expand-md navigation">
-            <div class="container"><a class="navbar-brand" href="/">Launch</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="/">Rocket Launch App</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/">Dashboard</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,13 +36,15 @@
     <div class="footer">
         <footer>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="/">Launch</a></li>
+                <li class="list-inline-item"><a href="/">Home</a></li>
             </ul>
-
+            <p class="copyright">Αριστοτέλης Χρήστου, Αντώνης Σπανός © 2018</p>
         </footer>
     </div>
     <!-- End footer -->
 
+    <script src="assets/vendor/js/jquery.min.js"></script>
+    <script src="assets/vendor/js/bootstrap.min.js"></script>
   	<script src="assets/js/main.js"></script>
 </body>
 
