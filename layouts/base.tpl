@@ -15,32 +15,37 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
+<body >
     <!-- Header with navigation -->
-    <div class="header">
-        <nav class="navbar navbar-light navbar-expand-md navigation">
-            <div class="container"><a class="navbar-brand" href="/">Rocket Launch App</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home</a></li>
-                    </ul>
+    <div class="wrapper"  style="background-image: url('assets/img/star-tile.jpg'); background-size: 100%;">
+        <div class="header" >
+            <nav class="navbar navbar-light navbar-expand-md navigation">
+                <div class="container"><a class="navbar-brand" href="/">
+                <!--Rocket Launch App-->
+                <img src="assets/img/LOGO.jpg">
+                </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-    <!-- End of header -->
+            </nav>
+        </div>
+        <!-- End of header -->
 
-    <div class="container">
-        {{!base}}
-        <br>
-        <div class="row">
-            <div class="col-sm-12 offset-11">
-                <button onclick="goToTop()" id="upButton" title="Go to the top"><i class="fa fa-angle-up"></i></button>
+        <div class="container">
+            {{!base}}
+            <br>
+            <div class="row">
+                <div class="col-sm-12 offset-11">
+                    <button onclick="goToTop()" id="upButton" title="Go to the top"><i class="fa fa-angle-up"></i></button>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Start footer -->
     <div class="footer">
         <footer>

@@ -29,17 +29,18 @@
   margin-bottom: 2em;
 }
 
-h1 {
+h1,h2 {
   text-align: center;
   margin-bottom: 1em;
+  color:white;
 }
 
 /* Navigation */
 .navigation {
-  background:#fff;
+  background:#000;
   padding-top:.75rem;
   padding-bottom:.75rem;
-  color:#333;
+  color:#fff;
   border-radius:0;
   box-shadow:none;
   border:none;
@@ -59,11 +60,11 @@ h1 {
 }
 
 .navigation .navbar-brand:hover {
-  color:#222;
+  color:#DDD;
 }
 
 .navigation .navbar-toggler {
-  border-color:#ddd;
+  border-color:#777;
 }
 
 .navigation .navbar-toggler:hover, .navigation .navbar-toggler:focus {
@@ -91,11 +92,11 @@ h1 {
 }
 
 .navigation.navbar-light .navbar-nav .nav-link {
-  color:#465765;
+  color:#eee;
 }
 
 .navigation.navbar-light .navbar-nav .nav-link:focus, .navigation.navbar-light .navbar-nav .nav-link:hover {
-  color:#37434d !important;
+  color:#888 !important;
   background-color:transparent;
 }
 
@@ -119,13 +120,12 @@ h1 {
 
 /* Footer CSS */
 .footer {
-    margin-top: 2em;
+    
     padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
+    background-color:#000;
+    color:#fff;
     bottom:0;
     width:100%;
-    background-color:#eeeeee;
     line-height:20px;
 }
 
@@ -159,3 +159,15 @@ h1 {
     color:#aaa;
     margin-bottom:0;
 }
+
+.btn
+{
+  background-color: white;
+
+}
+
+#upButton
+{
+  padding:5px 25px;
+}
+
