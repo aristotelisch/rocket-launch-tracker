@@ -6,13 +6,13 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <button class="btn next-btn">Previous Event</button>
     </div>
-    <div class="col-sm-4 offset-2">
+    <div class="col-md-4 offset-2">
         <div class="datepicker btn">{{context["current_date"]}}</div>
     </div>
-    <div class="col-sm-2 offset-1">
+    <div class="col-md-2 offset-1">
         <button class="btn previous-btn float-right" >Next Event</button>
     </div>
 </div>
@@ -26,12 +26,11 @@
 
 <div class="row">
     <script type="text/javascript">
-        window.onscroll = function() { if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) document.getElementById("upButton").style.display = "block";
+        window.onscroll = function() { if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) document.getElementById("upButton").style.display = "block";
         else document.getElementById("upButton").style.display = "none"; }
         function goToTop() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
     </script>
 
-    <button onclick="goToTop()" id="upButton" title="Go to the top"><i class="fa fa-angle-up"></i></button>
     <div class="col-sm-12">
         <div>
             % for launch in context["launches"]:

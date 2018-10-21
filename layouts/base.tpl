@@ -33,6 +33,12 @@
 
     <div class="container">
         {{!base}}
+        <br>
+        <div class="row">
+            <div class="col-sm-12 offset-11">
+                <button onclick="goToTop()" id="upButton" title="Go to the top"><i class="fa fa-angle-up"></i></button>
+            </div>
+        </div>
     </div>
 
     <!-- Start footer -->
