@@ -7,6 +7,7 @@ import json
 import bottle
 import random
 from mylaunchlibrary.launch import Launch
+from weather_detector.weather_test import WeatherReporter
 
 app = bottle.default_app()
 
