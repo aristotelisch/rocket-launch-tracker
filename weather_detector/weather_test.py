@@ -2,7 +2,7 @@ from weather import Weather, Unit
 
 class WeatherReporter:
     w = None
-    def __init__(self, unit):
+    def __init__(self, unit=Unit.CELSIUS):
         self.w = Weather(unit)
 
     def get_result_for_geolocation(self, lat, lon):
@@ -18,6 +18,15 @@ class WeatherReporter:
         list = []
         for forecast in forecasts:
             list.append({"date":forecast.date, "high":forecast.high, "low":forecast.low, "description":forecast.text})
+        return list
+
+    def get_forecasting_results_for_geolocation_date(self, lat, lon, date):
+        location = self.w.lookup_by_latlng(lat, lon)
+        forecasts = location.forecast
+        list = []
+        for forecast in forecasts:
+            if date == forecast.date:
+                list.append({"date":forecast.date, "high":forecast.high, "low":forecast.low, "description":forecast.text})
         return list
 
 
