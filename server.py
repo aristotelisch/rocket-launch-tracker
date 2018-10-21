@@ -10,15 +10,11 @@ from mylaunchlibrary.launch import Launch
 
 app = bottle.default_app()
 
-@get('/')
-def index():
-  return '<p>Hello</p>'
-
 @get("/assets/<filename:re:.*\.(css|js|jpg|jpeg|png|gif|ico|woff|woff2|ttf|map)>")
 def serve_assets(filename):
     return static_file(filename, root="./assets")
 
-@get('/launch')
+@get('/')
 def launch_handler():
   l = Launch()
   launches = l.next_launches(4)
