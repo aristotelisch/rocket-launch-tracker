@@ -24,7 +24,6 @@
 </div>
 
 
-
 <div class="row">
     <script type="text/javascript">
         window.onscroll = function() { if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) document.getElementById("upButton").style.display = "block";
@@ -46,12 +45,14 @@
                         <div class="col-md-5">
                             <h3>{{launch.name}}</h3>
                             <p>
-                            <span>{{launch.windowstart}}</span>
-                            <span>launch.duration</span>
+                            % start = launch.windowstart.strftime('%Y-%m-%d %H:%M')
+                            % windowstart = launch.windowstart.strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+                            % windowend = launch.windowend.strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+                            <span>{{start}}</span>
                             <div title="Add to Calendar" class="addeventatc">
                                     Add to Calendar
-                                    <span class="start">{{launch.windowstart}}</span>
-                                    <span class="end">{{launch.windowend}}</span>
+                                    <span class="start">{{windowstart}}</span>
+                                    <span class="end">{{windowend}}</span>
                                     <!--<span class="timezone">America/Los_Angeles</span>-->
                                     <span class="title">{{launch.name}}</span>
                                     <span class="description">launch.desc</span>
@@ -70,7 +71,27 @@
                                 <a target="_blank" href=launch.vidURL>Watch live here</a>
                             </p>
                             <p>
-                                <span>Weather Projection: </span><span>launch.weather</span>
+                                % current_weather = context["weather"].get_result_for_geolocation(53.3494, -6.2601)
+                                <span>Current Weather Conditions:  </span>
+                                <span>{{current_weather.get("condition")}}, </span>
+                                <span>{{current_weather.get("temp")}} ℃, </span>
+                                <span>{{current_weather.get("windSpeed")}} Knots</span>
+                            </p>
+                                % date = launch.windowstart.strftime('%d %b %Y')
+                                % forecast_array = context["weather"].get_forecasting_results_for_geolocation_date(53.3494, -6.2601, date)
+                                % if len(forecast_array) > 0:
+                                    <p>
+                                        <span>Weather Forecast: </span>
+
+                                        <span>{{date}}</span>
+                                        <span>{{forecast_array[0].get("high")}}, </span>
+                                        <span>{{forecast_array[0].get("low")}} ℃, </span>
+                                        <span>{{forecast_array[0].get("description")}} Knots</span>
+                                    </p>
+                                % end
+                            <br>
+                            <p>
+                                <span><a href="#" class="btn btn-primary">Buy Ticket <i class="fas fa-rocket"></i></a></span>
                             </p>
                                 % if launch.probability != -1:
                                     <p>
