@@ -34,7 +34,7 @@
     <div class="col-sm-12">
         <div>
             % for launch in context["launches"]:
-            <div class="card col-sm-12">
+            <div class="card col-sm-12" style="margin-bottom:20px">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-7">
@@ -47,6 +47,16 @@
                             <p>
                             <span>{{launch.windowstart}}</span>
                             <span>launch.duration</span>
+                            <div title="Add to Calendar" class="addeventatc">
+                                    Add to Calendar
+                                    <span class="start">{{launch.windowstart}}</span>
+                                    <span class="end">{{launch.windowend}}</span>
+                                    <!--<span class="timezone">America/Los_Angeles</span>-->
+                                    <span class="title">{{launch.name}}</span>
+                                    <span class="description">launch.desc</span>
+                                    <span class="location">{{launch.location.pads[0].name}}</span>
+                                    <span class="alarm_reminder">15</span>
+                                </div>
                             <p>
                                 <a target="_blank" href={{launch.location.pads[0].map_url}}>
                                 </p>
@@ -76,7 +86,6 @@
                                 % end
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

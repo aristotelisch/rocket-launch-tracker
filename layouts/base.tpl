@@ -56,6 +56,8 @@
     <script src="assets/vendor/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   	<script src="assets/js/main.js"></script>
+    <script src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
 </body>
 
 </html>
