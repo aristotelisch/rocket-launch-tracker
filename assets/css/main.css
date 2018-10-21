@@ -1,3 +1,10 @@
+.logo {
+  width: 250px !important;
+}
+
+.btn-primary {
+  background-color: #2196F3 !important;
+}
 /* Calendar events */
 .event {
   position: absolute;

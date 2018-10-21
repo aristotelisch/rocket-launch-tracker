@@ -22,7 +22,7 @@
             <nav class="navbar navbar-light navbar-expand-md navigation">
                 <div class="container"><a class="navbar-brand" href="/">
                 <!--Rocket Launch App-->
-                <img src="assets/img/LOGO.jpg">
+                <img class="logo" src="assets/img/LOGO.jpg">
                 </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     
                     <div class="collapse navbar-collapse"
