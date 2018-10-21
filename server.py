@@ -23,6 +23,7 @@ def launch_handler():
   context["title"] = "All launches"
   context["launches"] = launches
   context["current_date"] = datetime.datetime.now().strftime("%Y-%m-%d")
+  context["weather"] = WeatherReporter()
   return template('./layouts/launch', context=context)
 
 def main():
